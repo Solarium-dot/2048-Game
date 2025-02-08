@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #faf8ef; /* Light background like 2048 */
+    margin: 0; /* Remove default margins */
+}
+.title {
+    font-size: 50px;
+    display: inline-block;
+    padding: 0px;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 400px; /* Set a fixed size */
+    height: 400px; /* Make sure it's a square */
+    padding: 20px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.gameContainer > div {
+    aspect-ratio: 1 / 1; /* Keep squares */
+    background-color: #eee4da;
+    display: flex;
+    justify-content: center;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #776e65;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.1);
+}
